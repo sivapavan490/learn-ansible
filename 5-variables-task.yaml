@@ -1,0 +1,14 @@
+# variables from task level
+
+- name: variables from task level
+  hosts: localhost
+  become: yes
+  vars:
+    course: "joindevops"
+    trainer: "shivakumar"
+  tasks:
+    - name: variables from task level
+      vars: # task level
+        course: DEVOPS WITH AWS
+      ansible.builtin.debug:
+        msg: hi; i joined a online institue {{ course }}, trainer is {{ trainer}}
