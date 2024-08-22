@@ -7,11 +7,8 @@
   become: yes
   vars_files:
   - variables.yaml
-    duration: 110
   tasks:
     - name: variables from task level
       vars: # task level
-        course: DEVOPS WITH AWS
-        duration: 120
       ansible.builtin.debug:
         msg: hi; i joined a online institue {{ course }}, trainer is {{ trainer}} & duration {{duration}}
