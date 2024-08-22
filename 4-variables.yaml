@@ -2,8 +2,8 @@
   hosts: localhost
   become: yes
   vars:
-    course: joindevops
-    trainer: shivakumae
+    course: "joindevops"
+    trainer: "shivakumae"
   tasks:
     - name: variables from play level
       ansible.builtin.debug:
