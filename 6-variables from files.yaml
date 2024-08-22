@@ -7,9 +7,9 @@
   become: yes
   vars_files:
   - variables.yaml
-      course: "joindevops"
-      trainer: "shivakumar"
-      durastion: "120hrs"
+      # course: "joindevops"
+      # trainer: "shivakumar"
+      # durastion: "120hrs"
   tasks:
     - name: variables from task level
       vars: # task level
