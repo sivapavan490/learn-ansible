@@ -1,0 +1,5 @@
+- name: ping servers
+  hosts: inventory
+  tasks: 
+  - name: ping the ser vers
+    ansible.builtin.ping:
