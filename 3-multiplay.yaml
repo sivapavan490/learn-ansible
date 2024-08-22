@@ -10,6 +10,6 @@
   hosts: localhost
   become: yes
   tasks:
-  - name: play2 & task2
-  ansible.builtin.debug:
-    msg: this is from play2 & task2
+    - name: play2 & task2
+    ansible.builtin.debug:
+      msg: this is from play2 & task2
