@@ -1,0 +1,18 @@
+# In this model we will keep store variables in a external variables file. In that file we will store all the variables & values
+
+# variables from external file
+
+- name: variables from task level
+  hosts: localhost
+  become: yes
+  vars_files:
+  - variables.yaml
+    course: "joindevops"
+    trainer: "shivakumar"
+    durastion: "120hrs"
+  tasks:
+    - name: variables from task level
+      vars: # task level
+        course: DEVOPS WITH AWS
+      ansible.builtin.debug:
+        msg: hi; i joined a online institue {{ course }}, trainer is {{ trainer}} & duration {{duration}}
