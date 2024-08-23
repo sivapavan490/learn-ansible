@@ -1,6 +1,11 @@
 Devops-practice
 DevOps321
-
+    Here we will mention the variables from differet styles.
+        1. vars # variables at play level refer variable-play.yaml
+        2. vars # variables at task level. Here play level variables r override by the task level variables. refer variables-task.yaml
+        3. vars_files refer variables from files.
+        4. vars_prompt refer vars-prompt.yaml
+        5. 
 * If we want to login from ansible server to other servers. we will follow below process
 
 # sshpass -p "password" ssh username@I.P address
@@ -19,4 +24,4 @@ DevOps321
  to run a playbook file in ansible we use below cmd model
 
  ```
- ansible-playbook -i inventory -e ansible_user=username -e ansible_password=password filename
+ ansible-playbook -i inventory -e ansible_user=username -e ansible_password=password filename -->

@@ -1,0 +1,15 @@
+# variables taking from cmd line terminal
+- name: variables from cmd line
+  hosts: localhost
+  become: yes
+  vars_prompt:
+    - name: USERNAME  # in promptthis is variable
+      prompt: please enter your username # this is prompt
+      private: false # user can see what we r entering on terminal
+    - name: PASSWORD
+      prompt: please enter your password
+      private: true # user can't see what we r entering on terminal
+  tasks:
+  - name: print and check the values
+    ansible.builtin.debug:
+      msg: "username is: {{ USERNAME}}, password is: {{PASSWORD}}" 

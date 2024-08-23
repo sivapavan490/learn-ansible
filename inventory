@@ -1,2 +1,9 @@
 [web]
 44.205.2.57
+
+[localhost]
+localhost
+
+[localhost:vars]
+course="devops with aws"
+duration="120hrs"
