@@ -24,6 +24,10 @@ DevOps321
  to run a playbook file in ansible we use below cmd model
 
  ```
- ansible-playbook -i inventory -e ansible_user=username -e ansible_password=password filename ```# to run ansible play books
+ ansible-playbook -i inventory -e ansible_user=username -e ansible_password=password filename 
 ```
- nohup ansible-playbook -i inventory -e ansible_user=username -e ansible_password=password filename & /dev/null ``` --> to run ansible playbooks in the background we use this command
+# to run ansible play books
+```
+ nohup ansible-playbook -i inventory -e ansible_user=username -e ansible_password=password filename & /dev/null 
+ ```
+# to run ansible playbooks in the background we use this command
